@@ -1,0 +1,10 @@
+
+<h2>Property binding</h2>
+<h3>Meu time do coração é o Real Madrid, o maior clube do mundo!</h3>
+<!--La no componente.ts foi criada uma variável com o nome "escudoReal". O property binding é justamente substituir um atributo por um atributo entre colchetes, depois será passada a referência dessa variável.-->
+<img [src]="escudoReal">
+<h2>Event binding</h2>
+<p>Ao clicar no botão abaixo, será disparado um evento através de event binding que vai gerar um alerta com uma saudação.</p>
+<!--Entre parênteses será passado o evento desejado, muito sememlhante ao "onclick" do JavaScript.
+Em seguida será passado o nome do método. O método será definido dentro do arquivo .ts do componente,-->
+<button (click)="mostrarSaudacao()" type="button">Clique aqui</button>

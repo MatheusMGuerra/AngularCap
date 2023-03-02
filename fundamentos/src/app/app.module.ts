@@ -7,6 +7,7 @@ import { PrimeiroComponenteComponent } from './primeiro-componente/primeiro-comp
 import { SegundoComponenteComponent } from './segundo-componente/segundo-componente.component';
 import { MultiplicadorPipe } from './multiplicador.pipe';
 import { TerceiroComponenteComponent } from './terceiro-componente/terceiro-componente.component';
+import { TimeDoCoracaoComponent } from './time-do-coracao/time-do-coracao.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TerceiroComponenteComponent } from './terceiro-componente/terceiro-comp
     PrimeiroComponenteComponent,
     SegundoComponenteComponent,
     MultiplicadorPipe,
-    TerceiroComponenteComponent
+    TerceiroComponenteComponent,
+    TimeDoCoracaoComponent
   ],
   imports: [
     BrowserModule,
