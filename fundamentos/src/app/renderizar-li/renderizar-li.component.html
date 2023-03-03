@@ -1,0 +1,12 @@
+<h2>Lojinha de celulares</h2>
+<ul>
+    <!--Dentro da tag li, através do * seguido de "ng", pode ser colocado algumas coisas de programação, como if, for e etc. Nesse caso será colocado um forEach que irá percorrer o array de celulares-->
+    <li *ngFor="let elemento of celulares"><!--A partir daqui, o li já está recebendo os cada objeto dentro do array-->
+        <strong>Modelo</strong>: {{elemento.nome}} <br>
+        ID: {{elemento.id}} <br>
+        <!--Agora utilizando o ngClass para adicionar dinamicamente a classe esgotado ou disponível para o estado do produto, pois de acordo com a classe, será colocado um estilo diferente. -->
+        <strong>Descrição:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iusto atque excepturi officiis, corrupti impedit qui vel reiciendis autem incidunt veritatis ducimus pariatur necessitatibus, quidem earum omnis error. Sint, quibusdam! <br>
+        <span [ngClass]="elemento.esgotado ? 'esgotado':'disponivel'">{{ elemento.esgotado ? "Esgotado":"Disponível"}}</span>
+        <!--OBS: A estilização de classe esgotado e disponivel estará no arquivo CSS desse elemento-->
+    </li>     
+</ul>

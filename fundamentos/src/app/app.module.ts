@@ -8,6 +8,10 @@ import { SegundoComponenteComponent } from './segundo-componente/segundo-compone
 import { MultiplicadorPipe } from './multiplicador.pipe';
 import { TerceiroComponenteComponent } from './terceiro-componente/terceiro-componente.component';
 import { TimeDoCoracaoComponent } from './time-do-coracao/time-do-coracao.component';
+import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
+import { FormsModule } from '@angular/forms';
+import { RenderizarLiComponent } from './renderizar-li/renderizar-li.component';
+import { DecoradorInputComponent } from './decorador-input/decorador-input.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +20,15 @@ import { TimeDoCoracaoComponent } from './time-do-coracao/time-do-coracao.compon
     SegundoComponenteComponent,
     MultiplicadorPipe,
     TerceiroComponenteComponent,
-    TimeDoCoracaoComponent
+    TimeDoCoracaoComponent,
+    TwoWayDataBindingComponent,
+    RenderizarLiComponent,
+    DecoradorInputComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

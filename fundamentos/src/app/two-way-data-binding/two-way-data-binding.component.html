@@ -1,0 +1,6 @@
+<h2>Two way data binding</h2>
+<label for="nome">Nome: </label>
+<!-- Agora será feito,dentro do input, um binding de evento dentro de um binding de property para que ocorra o two-way-data-binding, ou seja, o html do componente se comunicando com o ts do componente para trocar informações de duas vias. Também será usado o "ngModel", mas para que isso funcione, é necessário adicionar "FormsModel" la no import do app.module -->
+<input type="text" [(ngModel)]="nome">
+<p>Aqui você pode conferir o que está sendo digitado dentro do input, sendo passado do TS para o HTML: {{nome}}</p>
+
