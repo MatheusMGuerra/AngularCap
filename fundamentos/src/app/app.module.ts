@@ -14,6 +14,8 @@ import { RenderizarLiComponent } from './renderizar-li/renderizar-li.component';
 import { DecoradorInputComponent } from './decorador-input/decorador-input.component';
 import { ComponentePaiComponent } from './componente-pai/componente-pai.component';
 import { ComponenteFilhoComponent } from './componente-filho/componente-filho.component';
+import { ComponenteAComponent } from './componente-a/componente-a.component';
+import { ComponenteBComponent } from './componente-b/componente-b.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ComponenteFilhoComponent } from './componente-filho/componente-filho.co
     RenderizarLiComponent,
     DecoradorInputComponent,
     ComponentePaiComponent,
-    ComponenteFilhoComponent
+    ComponenteFilhoComponent,
+    ComponenteAComponent,
+    ComponenteBComponent
   ],
   imports: [
     BrowserModule,

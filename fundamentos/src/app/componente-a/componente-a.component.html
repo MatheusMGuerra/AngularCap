@@ -1,0 +1,15 @@
+<h1>Novo teste de interação entre componentes</h1>
+<p>Esse teste fará interação two-way-data-binding entre componentes A e B, tendo A um atributo definindo sua cor como vermelha e o B dinamicamente como azul.</p>
+<p>Primeiro será mostrado apenas a cor de A.</p>
+<p>A cor de A é {{corDeA}}</p>
+<!--Primeiro adicionando a tag de componente-B aqui no html do componente-A
+Segundo: adicionando o atributo de A em B, ao mesmo tempo que é colocado o @input no atributo que B vai receber de A-->
+<!-- Para passar a cor de B para A, será criada na tag respectiva de B dentro desse arquivo html de A, uma variável que irá acessar os atributos de B-->
+<app-componente-b [corDeA]="corDeA" #compB (mostrarPaleta)="definirPaleta(&event)"></app-componente-b>>
+<!--Depois de criado o método em componente-A.ts, criado o evento em componente-B.ts, implementados dentro dos atributos da tag html de componente-B, partir para componente-B.html para implementar o botão que vai disparar tudo isso ao click-->
+<h3>A partir daqui começou a conexão de B para A através da variável #compB</h3>
+<p>Agora A pode ter sua cor original + cor de B em sua composição.</p>
+<p>Componente A agora possui as cores: {{corDeA}} e {{compB.corDeB}}</p>
+<!--Aqui, a cor azul definida em B será removida (antes: corDeB = 'Azul' / depois: corDeB = '')
+A intenção agora é que a cor de B seja adicionada de forma dinâmica, e que em tempo real essa mudança seja feita. Seguir para componente-B.html para acompanhar a criação do input que definirá o nome da cor de B.-->
+
