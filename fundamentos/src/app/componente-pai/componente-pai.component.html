@@ -1,0 +1,6 @@
+<h2>Aqui é o componente pai, {{caracteristica}}</h2>
+<!--Aqui dentro do html do componente pai, será chamado o componente filho-->
+<!--Para que o pai receba a caracteristica do filho, vai ser adicionada uma variável em filho, chamada aqui de "#filho". Essa variável terá acesso a todos os atributos dentro da classe filho-->
+<app-componente-filho [caracteristica]="caracteristica" (caracFinal)="juntarCaracteristica($event)" #filho></app-componente-filho>
+<!--Após ter adicionado o evento personalizado no filho, é necessário criar o @output lá em filho.ts-->
+<h3>Agora o pai possui: {{ caracteristica }} {{ filho.caracteristica2 }}</h3>

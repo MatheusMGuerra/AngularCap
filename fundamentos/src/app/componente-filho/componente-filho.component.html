@@ -1,0 +1,6 @@
+<h2>O filho deverá receber a caracteristica do pai junto a dele mesmo</h2>
+<h3>Caracteristica recebida do pai: {{caracteristica}}</h3>
+<label for="caracteristicaFilho">A caracteristica do filho é: </label>
+<input type="text" id="caracteristicaFilho" [(ngModel)]="caracteristica2"><br>
+<!--Agora será adicionado o evento personalizado com a junção das caracteristicas dentro do evento do click no botão abaixo-->
+<button type="button" (click)="caracFinal.emit(caracteristica + ' ' +caracteristica2)">Clique aqui para descobrir a caracteristica final do pai</button>

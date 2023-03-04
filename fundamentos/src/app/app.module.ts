@@ -12,6 +12,8 @@ import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-
 import { FormsModule } from '@angular/forms';
 import { RenderizarLiComponent } from './renderizar-li/renderizar-li.component';
 import { DecoradorInputComponent } from './decorador-input/decorador-input.component';
+import { ComponentePaiComponent } from './componente-pai/componente-pai.component';
+import { ComponenteFilhoComponent } from './componente-filho/componente-filho.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { DecoradorInputComponent } from './decorador-input/decorador-input.compo
     TimeDoCoracaoComponent,
     TwoWayDataBindingComponent,
     RenderizarLiComponent,
-    DecoradorInputComponent
+    DecoradorInputComponent,
+    ComponentePaiComponent,
+    ComponenteFilhoComponent
   ],
   imports: [
     BrowserModule,
