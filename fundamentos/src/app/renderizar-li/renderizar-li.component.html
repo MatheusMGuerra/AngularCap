@@ -1,6 +1,6 @@
 <h2>Lojinha de celulares</h2>
 <ul>
-    <!--Dentro da tag li, através do * seguido de "ng", pode ser colocado algumas coisas de programação, como if, for e etc. Nesse caso será colocado um forEach que irá percorrer o array de celulares-->
+    <!--Dentro da tag li, através do * seguido de "ng", pode ser colocado algumas coisas de programação, como if, for e etc, essas são as directives nativas. Nesse caso será colocado um forEach que irá percorrer o array de celulares-->
     <li *ngFor="let elemento of celulares"><!--A partir daqui, o li já está recebendo os cada objeto dentro do array-->
         <strong>Modelo</strong>: {{elemento.nome}} <br>
         ID: {{elemento.id}} <br>
