@@ -2,3 +2,8 @@
 <label for="nome">Digite um nome: </label>
 <input type="text" id="nome" [(ngModel)]="nome">
 <button (click)="addNome">Adicionar nome</button>
+<ul>
+    <li *ngFor="elementos of nomes">
+        {{elementos}
+    </li>
+</ul>

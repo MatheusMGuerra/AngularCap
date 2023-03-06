@@ -9,6 +9,6 @@ export class LoggerService {
     this.mensagens.push(mensagem)
   }
   exibeLogs(){
-    console.log(this.mensagens)
+    return this.mensagens
   }
 }
